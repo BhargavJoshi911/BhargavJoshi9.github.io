@@ -8,7 +8,7 @@ const loginform = function(){
     console.log(email);
 
     if(email === "xyz@gmail.com" && pwd === "xyz"){
-        window.location = "/user/User_Home.html";
+        window.location = "User_Home.html";
         //window.location="www.google.com";
     }
     else{
@@ -24,7 +24,7 @@ const loginform1 = function(){
     let pwd = login1.elements[1].value;
 
     if(email === "admin@gmail.com" && pwd === "admin"){
-        window.location = "/Admin/Admin_Home_Update.html";
+        window.location = "Admin_Home_Update.html";
     }
     else{
         alert('invalid email or password');

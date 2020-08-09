@@ -1,0 +1,97 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman', Times, serif;
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img.jpg") no-repeat;
+	background-size: cover;
+}
+
+.login-box {
+	border-radius: 25px 25px;
+	background: #2d3436;
+    background: rgb(45 ,52 ,54, 0.7);
+	box-shadow: 0px 0px 10px cadetblue;
+	padding-top: 80px;
+	width: 350px;
+	height: 70%;
+	border: 2px solid #2d3436;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}  
+
+.login-box h1{
+	margin-left: 35%;
+	float: left;
+    font-size: 40px;
+	border-bottom: 6px solid #4caf50;
+	margin-bottom: 50px;
+	padding: 13px 0;
+}
+
+.textbox {
+	width: 60%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 8px 70px;
+	border-bottom: 1px solid #4caf50;
+}
+
+.textbox i{
+	width: 18px;
+	float: left;
+	text-align: center;
+}
+
+.textbox input{
+	margin-left: 40px;
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	font-size: 18px;
+	width: 80%;
+	float: left;
+	margin: 0 10px;
+}
+
+.btn{
+	width: 70%;
+	background: none;
+	border: 2px solid #4caf50;
+	color: white;
+	font-family: sans-serif;
+	padding: 5px 74px 5px 74px;
+	font-size: 20px;
+	cursor: pointer;
+	margin: 0px 0px 0px 68px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.btn:hover {
+	border-color: thistle;
+}
+
+.atag {
+	margin: 20px 10px 10px 10px;
+}
+
+.atag a {
+	margin-top: 10px;
+	margin-left: 100px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	transition: 0.6s ease;
+}
+
+a:hover {
+	color: thistle;
+}
