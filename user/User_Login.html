@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+	<form id="login1" >
+		<div class="login-box">
+			<h1>Login</h1>
+			<div class="textbox">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="text" placeholder="Email" value="">
+			</div>
+			<div class="textbox">
+				<i class="fa fa-lock" aria-hidden="true"></i>
+				<input type="password" placeholder="Password" value="">
+			</div>
+			
+			<table style="margin-top: 40px;">
+				<tr align="center" >
+					<td colspan="2">
+						<button type="button" class="btn" onclick="loginform()" >Sign In</button>
+					</td>
+				</tr>
+			</table>
+
+			<div class="atag">
+					<a href="#">Forget Password?</a>
+                    <a href="User_Registration.html"> Create Account</a>
+                    <a href="/Admin/Admin_User_Login.html"> Login As Admin</a>
+			</div>	
+		</div>
+	</form>
+</body>
+<script src="/JS/login.js"></script>
+<script>
+    window.onload = function exampleFunction() {
+      window.alert("Email: xyz@gmail.com  Password: xyz");
+    };
+  </script>
+</html>
