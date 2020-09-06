@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css" type="text/css">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Document</title>
 </head>
 
 <body>
-	<form id="login1" >
-		<div class="login-box">
-			<h1>Admin Login</h1>
-			<div class="textbox">
-				<i class="fa fa-user" aria-hidden="true"></i>
-				<input type="text" placeholder="Email" value="">
+	<div class="container mt-4">
+		<form id="login1">
+			<h1>Admin Login Here: </h1>
+			<br>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+					else.</small>
 			</div>
-			<div class="textbox">
-				<i class="fa fa-lock" aria-hidden="true"></i>
-				<input type="password" placeholder="Password" value="">
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1">
 			</div>
-			
-			<table style="margin-top: 40px;">
-				<tr align="center" >
-					<td colspan="2">
-						<button type="button" class="btn" onclick="loginform1()" >Sign In</button>
-					</td>
-				</tr>
-			</table>
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Check me out</label>
+			</div>
 
-			<div class="atag">
+			<center>
+				<div class="form-group">
+					<label class="col-8"></label>
+					<button type="submit" class="col-4 btn btn-primary" onclick="loginform1()">Submit</button>
+
+				</div>
+			</center>
+
+			<center>
+				<div class="form-group">
 					<a href="#">Forget Password?</a>
-					<a href="User_Login.html"> Login As user</a>
-			</div>	
-		</div>
-	</form>
+					<a class="ml-3" href="/User_Login.html"> Login As user</a>
+				</div>
+			</center>
+		</form>
+	</div>
+
 </body>
 <script src="login.js"></script>
 <script>
-    window.onload = function exampleFunction() {
-      window.alert("Email: admin@gmail.com   Password: admin");
-    };
-  </script>
+	window.onload = function exampleFunction() {
+		window.alert("Email: admin@gmail.com   Password: admin");
+	};
+</script>
+
 </html>

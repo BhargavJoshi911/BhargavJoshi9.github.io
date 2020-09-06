@@ -1,61 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PG List</title>
-        <link rel="stylesheet" href="PG_List.css">
-    </head>
-    <body>
-        <form action="#" action="POST">
-                <div class="wrapper">
-                    <div class="logo">
-                        <img src="PG.jpg" alt="">
-                    </div>
-                    <ul class="nav-area">   
-                        <li><a href="User_Home.html">Home</a></li>
-                        <li><a class="active" href="User_Pg_List.html">PG's</a></li>
-                        <li><a href="User_PG_Reg.html">PG Register</a></li>
-                        <li><a href="User_Edit_Pg_Details.html">update PG Detials</a></li>
-                        <li><a href="index.html">Logout</a></li>
-                    </ul>
-                </div>
 
-                <hr>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-                <div class="welcome-text">
-                    <h1>List of Available PG'S</h1>
-                    <div class="list">
-                        <img src="https://i.pinimg.com/564x/c9/aa/f8/c9aaf8853557c381c80ee827db0dad64.jpg" alt="">
-                        <p>
-                            Address: xyz colony,nadiad-387001 <br>
-                            owner Contact Number: 9876543210 <br>
-                            Total Number of Person: 7 <br>
-                            Already booked: 5 <br>
-                            Remaining: 2 <br>
-                        </p>
-                    </div>
-                    <div class="list">
-                        <img src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500    " alt="">
-                        <p>
-                            Address: PQR colony,nadiad-387001 <br>
-                            owner Contact Number: 8787878787 <br>
-                            Total Number of Person: 5 <br>
-                            Already booked: 5 <br>
-                            Remaining: 0 <br>
-                        </p>
-                    </div>
-                    <div class="list">
-                        <img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-                        <p>
-                            Address: ABC colony,nadiad-387001 <br>
-                            owner Contact Number: 9898989898 <br>
-                            Total Number of Person: 10 <br>
-                            Already booked: 3 <br>
-                            Remaining: 7 <br>
-                        </p>
-                    </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>PG List</title>
+    <link rel="stylesheet" href="PG_List.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark btn-dark">
+        <img class="navbar-brand" src="PG.jpg" alt="">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/User_Home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/User_Pg_List.html">PG</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/User_PG_Reg.html">PG Register</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/User_Edit_Pg_Details.html">Update PG Details</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" onclick="window.location.href='/index.html'">Logout</button>
+            </div>
+        </div>
+    </nav>
+<br>
+<br>
+    <div class="container my-4">
+        <h1 align="center">List Of Available PG    </h1>
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Sankalp<span class="text-muted">Home.</span></h2>
+                <p class="lead">
+                    Address: 8,xyz colony <br>
+                    city: xyz <br>
+                    Pincode: 123456 <br>
+                    state: xyz <br>
+                    Person Space: 5<br>
+                </p>
+                <div class="mx-2">
+                    <button class="btn btn-danger" onclick="window.location.href='#'">Contact_Owner</button>
                 </div>
-        </form>
-    </body>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                    height="300" src="https://source.unsplash.com/300x300/weekly?rent house" alt="">
+            </div>
+        </div>
+<br>    
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">unity <span class="text-muted">Homes</span></h2>
+                <p class="lead">
+                    Address: 10,abc colony <br>
+                    City: abc<br>
+                    Pincode: 098765<br>
+                    State: abc<br>
+                    Person Space: 5<br>
+                </p>
+                <div class="mx-2">
+                    <button class="btn btn-danger" onclick="window.location.href='#'">Contact_Owner</button>
+                </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                    height="300" src="https://source.unsplash.com/300x300/weekly?home" alt="">
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider" style="border: 1px solid lightgray;">
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2020-2021 PG Accomodation, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

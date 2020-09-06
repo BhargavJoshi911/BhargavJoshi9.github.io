@@ -29,40 +29,6 @@ body {
     padding: 0;
 }
 
-.nav-area {
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-
-.nav-area li{
-    display: inline-block;
-}
-
-.nav-area li a{
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-family: poppins;
-    font-size: 20px;
-    transition: 1.5s ease;
-}
-
-.nav-area li a:hover {
-    background: #fff;
-    color: #333;
-}
-
-.nav-area li a.active {
-    background: #fff;
-    color: black;
-}
-
-.logo img{
-    width: 100px;
-    float: left;
-    height: auto;
-}
 
 .pg-reg {
     margin-top: 60px;

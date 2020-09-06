@@ -4,20 +4,14 @@ html {
     font-family: 'Times New Roman', Times, serif;
 }
 
-form {
-    background: rgb(24, 23, 23, 0.8);
-    height: auto;
-    width: auto;
+.navbar-dark .navbar-brand {
+    color: #fff;
+    width: 90px;
+    height: 90px;
 }
 
-.wrapper {
-    width: 1250px;
-    margin: auto;
-}
-
-hr{
-    height: 100%;
-    width: 100%;
+.navbar {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
 }
 
 body {
@@ -25,81 +19,52 @@ body {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center ;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: table;
+    top: 0;
 }
 
-.nav-area {
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-}
-
-.nav-area li{
-    display: inline-block;
-}
-
-.nav-area li a{
+.container {
     color: #fff;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-family: poppins;
-    font-size: 20px;
-    transition: 1.5s ease;
+    padding:20px;
 }
 
-.nav-area li a:hover {
-    background: #fff;
-    color: #333;
-}
-
-.nav-area li a.active {
-    background: #fff;
-    color: black;
-}
-
-.logo img{
-    width: 100px;
-    float: left;
-    height: auto;
-}
-
-.welcome-text {
-    position: absolute;
-    width: 900px;
-    height: auto;
-    margin: 40px 10px 5px 320px;
-    text-align: center;
-}
- 
-.welcome-text h1 {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 45px;
-}
-
-.list {
-    border-radius: 50px 0px 50px 0px;
-    padding: 10px 25px;
+.row {
     border: 1px solid #fff;
-    width: 900px;
-    height: auto;
-    margin-top: 30px;
-    display: inline-block;
+    padding: 10px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
 }
 
-.list img{
-    border-radius: 50px 0px 50px 0px;
-    float: left;
-    width: 300px;
-    height: auto;
-
+.col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-xl, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12 , .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;    
+    align-items: center;
 }
 
-.list p {
-    padding: 10px 25px;
-    font-size: 20px;
-    color: #fff;
+@media (min-width: 576px){
+    .container {
+        max-width: 540px;
+    }
 }
-
+@media (min-width: 768px){
+    .container {
+       max-width: 720px;
+    }
+    .col-md-6{
+        margin-left: 200px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+    .col-md-6{
+        margin-left: 400px;
+    }    
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+    }
+}
